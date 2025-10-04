@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPC Smart App ডাউনলোড</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import (Inter is modern and clean) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+            background-color: #F8FAFC; /* Very light, clean background */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mpc-primary': '#1E3A8A', /* Deep Navy Blue for professional look */
+                        'mpc-accent': '#059669', /* Green accent for the button */
+                        'mpc-light': '#EFF6FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Header Section (Institutional Look) -->
+    <header class="w-full bg-mpc-primary text-white shadow-lg mb-8 md:mb-12 py-6 rounded-b-xl">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            
+            <!-- লোগো/আইকনের জন্য ইমেজ যুক্ত করা হয়েছে -->
+            <!-- 🔗 নিচের src-এ আপনার Google Drive ইমেজ লিঙ্কটি দিন। মনে রাখবেন, সরাসরি "view" লিঙ্ক নয়, অ্যাপ বা ওয়েবের জন্য তৈরি লিঙ্ক ব্যবহার করতে হবে। -->
+            <img 
+                src="MPC-Smart app.png" 
+                alt="MPC Logo"
+                class="mx-auto w-12 h-12 mb-2 rounded-full object-cover border-2 border-white shadow-md"
+                onerror="this.onerror=null; this.src='https://placehold.co/48x48/ffffff/1E3A8A?text=LOGO+Error'"
+            >
+            <!-- উদাহরণ লিঙ্ক: https://drive.google.com/uc?export=view&id=YOUR_IMAGE_FILE_ID -->
+
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Mahmudul Physics & Chemistry
+            </h1>
+            <p class="mt-1 text-mpc-light text-base md:text-lg font-medium">
+                MPC Smart App - আপনার শিক্ষার নির্ভরযোগ্য সঙ্গী
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Download Card -->
+    <main class="w-full max-w-lg">
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-2xl border-t-4 border-mpc-primary transform transition duration-500 hover:shadow-mpc-primary/30">
+            <h2 class="text-2xl font-bold text-mpc-primary mb-5 text-center flex items-center justify-center space-x-2">
+                <span>📱 MPC Smart App ডাউনলোড নির্দেশিকা</span>
+            </h2>
+
+            <!-- Step-by-Step Instructions -->
+            <div class="space-y-4 text-gray-700 text-left text-base">
+                <div class="p-3 bg-mpc-light rounded-lg">
+                    <p class="font-semibold text-mpc-primary">ধাপ ১: অ্যাপ ডাউনলোড</p>
+                    <p class="mt-1">নিচের **“Download Now”** সবুজ বাটনে ক্লিক করে APK ফাইলটি ডাউনলোড করুন।</p>
+                </div>
+
+                <div class="p-3 bg-mpc-light rounded-lg">
+                    <p class="font-semibold text-mpc-primary">ধাপ ২: সতর্কতা মোকাবিলা (যদি আসে)</p>
+                    <p class="mt-1">ডাউনলোড শেষে যদি **“Install blocked”** বা **“Play Protect”** সতর্কতা আসে, তবে:</p>
+                    <ul class="list-disc list-inside ml-4 text-sm mt-1 space-y-1">
+                        <li>**Settings** এ যান → **Security** খুঁজুন।</li>
+                        <li>**Unknown sources** অপশনটি খুঁজে **Allow** করুন।</li>
+                        <li>এরপর পুনরায় ইনস্টল দিন।</li>
+                    </ul>
+                </div>
+
+                <div class="p-3 bg-mpc-light rounded-lg">
+                    <p class="font-semibold text-mpc-primary">ধাপ ৩: ব্যবহার শুরু</p>
+                    <p class="mt-1">সফলভাবে ইনস্টল হওয়ার পর অ্যাপটি খুলুন এবং আপনার তথ্য দিয়ে রেজিস্ট্রেশন সম্পন্ন করুন। তারপর লগিন করুন ও উপভোগ করুন স্মার্ট শিক্ষা।</p>
+                </div>
+            </div>
+
+            <!-- Download Button -->
+            <div class="mt-8 text-center">
+                <!-- 🔗 তোমার Google Drive লিঙ্ক এখানে দাও -->
+                <a class="download-btn inline-flex items-center justify-center px-8 py-3 border border-transparent text-lg font-extrabold rounded-full text-white bg-mpc-accent shadow-lg hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 transition transform duration-150 hover:scale-105" 
+                   href="https://drive.google.com/file/d/1ZFnS_iLa9JJGLrfvsIYiogOsEGVd_zwd/view?usp=drive_link" target="_blank">
+                    <span class="mr-2 text-xl">⬇️</span> Download Now
+                </a>
+            </div>
+            
+            <p class="mt-6 text-center text-sm text-gray-400">
+                নিশ্চিন্তে ডাউনলোড করুন। এই ফাইলটি সম্পূর্ণ নিরাপদ।
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-10 md:mt-16 w-full text-center text-gray-500 text-sm p-4">
+        <p>© 2025 Mahmudul Physics & Chemistry | সর্বস্বত্ব সংরক্ষিত</p>
+        <p class="mt-1">ডেভেলপার: মোঃ সাজ্জাদ হোসেন</p>
+    </footer>
+
+</body>
+</html>
